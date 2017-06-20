@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Home</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="node_modules/reqwest/reqwest.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/png" href="images/favicons/favicon16x.png" sizes="16x16">
+        <link rel="icon" type="image/png" href="images/favicons/favicon32x.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/favicons/favicon96x.png" sizes="96x96">
+
+    </head>
+    <body>
+        <div id="container">
+
+            <header>
+                <a href="index.html"><img src="images/logo.png" id="logo"></a>
+            </header>
+
+            <div id="wrapper">
+                <section class="column first">
+                    <h1>Marco Spronk</h1>
+                    <h2><em>Phuture Noize</em></h2>
+
+                    <table width="100%" id="infoTable">
+                        <tr>
+                            <td>Herritage</td>
+                            <td>The Netherlands</td>
+                        </tr>
+                        <tr>
+                            <td>Genres</td>
+                            <td>Hardstyle, Raw Hardstyle</td>
+                        </tr>
+                        <tr>
+                            <td>Official website</td>
+                            <td><a href="http://phuturenoize.com">phuturenoize.com</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td valign="top">Affiliations</td>
+                            <td>
+                                DWX Anarchy <br/>
+                                Hardcopy Records <br/>
+                                The Magic Show Records <br/>
+                                The Wishlist Agency <br/>
+                                X-Bone Records
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Albums</td>
+                            <td>3 - <a href="tracks.html">View albums</a></td>
+                        </tr>
+                    </table>
+
+                    <hr/>
+
+                    <!--  When in smallest screen, display this  -->
+                    <div class="smallScreenThirdColumn">
+                        <a id="showHidePhoto" onclick="showHidePhoto('headshot')" href="#">Show music player</a>
+                        <img src="images/marco.jpg" id="headshotSmall">
+                        <iframe id="playerSmallScreen" width="100%" height="450" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/325374217&amp;color=BE8900&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+                    </div>
+
+                    <!-- THIS IS A "HTML-INCLUDE, LIBRARY FROM W3SCHOOLS" -->
+                    <div class="quote" w3-include-html="content/quote.html"></div>
+
+                    <div class="smallScreenSecondColumn">
+                        <h1>Biography</h1>
+                        <h2>&nbsp;</h2>
+
+                        <div class="biography small" w3-include-html="content/biography.html"></div>
+                    </div>
+
+                </section>
+
+
+                <!-- Big screen -->
+                <section class="column second">
+
+                    <h1>Biography</h1>
+                    <h2>&nbsp;</h2>
+
+                    <div class="biography large" w3-include-html="content/biography.html"></div>
+
+                </section>
+
+                <aside class="column third">
+                    <img src="images/marco.jpg" id="headshot">
+                    <iframe id="playerLargeScreen" width="100%" height="360" scrolling="yes" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/325374217&amp;color=BE8900&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false"></iframe>
+                </aside>
+
+            </div>
+
+            <footer>
+                <em>Unofficial Phuture Noize fanpage</em>
+            </footer>
+
+
+        </div>
+
+        <script> w3.includeHTML(); </script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+    </body>
+</html>

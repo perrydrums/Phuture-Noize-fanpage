@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Albums</title>
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
+        <script src="node_modules/reqwest/reqwest.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="container">
+
+            <header>
+                <a href="home.html"><img src="images/logo.png" id="logo"></a>
+            </header>
+
+            <!-- Tracks loaded in via getAlbumID(); etc -->
+            <div id="wrapper" style="min-height: 254px;">
+                <img src="images/loading.gif" alt="LOADING..." id="loadingGIF">
+            </div>
+
+            <footer>
+                <em>Unofficial Phuture Noize fanpage</em>
+            </footer>
+
+        </div>
+
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript">
+            getAlbumID();
+        </script>
+
+    </body>
+</html>

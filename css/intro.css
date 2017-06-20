@@ -1,0 +1,96 @@
+/*
+
+PERRY JANSSEN
+UNOFFICIAL PHUTURE NOIZE FANPAGE
+2017
+
+*/
+
+
+*{
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    background-image: url("../images/PoT Pegasus Transparent1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+
+.wrapper{
+    width: 100%;
+    margin: 40vh auto 0 auto;
+    height: 0;
+}
+
+#title{
+    font: 30px Tahoma;
+    color: white;
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    transition: background-color .5s ease, border-color 1.5s ease;
+
+    border-top: 1px solid rgba(0,0,0,0);
+    border-bottom: 1px solid rgba(0,0,0,0);
+}
+
+#title #logo{
+    transition: height .5s ease;
+}
+
+#title:hover{
+    background-color: rgba(0,0,0,.6);
+    border-color: #FFF;
+}
+
+#title:hover #logo{
+    height: 150px;
+}
+
+/* Background overlay when hovering over logo */
+#overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    transition: 1s opacity ease;
+
+    background-image: url("../images/Pegasus Flame1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#title:hover + #overlay{
+    opacity: 1;
+}
+
+
+
+/* FOR SMALLER SCREENS */
+
+@media screen and (max-width:950px){
+
+    body{
+        background-image: url("../images/bg1.png");
+        background-size: cover;
+        background-position: top;
+    }
+
+    #title:hover{
+        background-color: rgba(255,176,0,.5);
+    }
+
+    #overlay{
+        display: none;
+    }
+
+}

@@ -1,0 +1,372 @@
+/*
+
+PERRY JANSSEN
+UNOFFICIAL PHUTURE NOIZE FANPAGE
+2017
+
+----------------------------------------------------
+----------------------------------------------------
+
+
+
+FREQUENTLY USED COLORS:
+
+GOLD: #BE8900
+
+
+*/
+
+
+/* CUSTOM FONTS */
+
+@font-face{
+    font-family: Titillium;
+    src: url("../font/TitilliumWeb-ExtraLight.ttf");
+}
+
+
+/* BASIC STRUCTURE */
+
+
+body{
+    background-color: black;
+    background-image: url("../images/Pegasus Flame1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+header{
+    text-align: center;
+    max-height: 200px;
+    margin-bottom: 50px;
+    background-color: #000;
+    border-bottom: 1px solid #BE8900;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    background-color: #000;
+    border-top: 1px solid #BE8900;
+    color: #757575;
+    text-align: center;
+    padding: 10px;
+    padding-top: 15px;
+    font: 14px Courier;
+}
+
+#container{
+    width: 960px;
+    margin: 0 auto 50px auto;
+}
+
+#wrapper{
+    border: 1px solid #BE8900;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.85);
+    margin-bottom: 75px;
+}
+
+.column{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+.column.first{
+    width: 350px;
+    float: left;
+    padding: 10px;
+}
+
+.column.second{
+    width: 350px;
+    float: left;
+    padding: 10px;
+}
+
+.column.third{
+    width: 260px;
+    float: left;
+    padding: 10px;
+}
+
+/* STRUCTURE SMALL */
+
+.smallScreenSecondColumn{
+    display: none;
+}
+
+.smallScreenThirdColumn{
+    display: none;
+}
+
+
+
+/* CONTENT */
+
+/* IMAGES */
+
+#logo{
+    height: 100px;
+}
+
+#headshot{
+    width: 100%;
+    display: inline;
+    border: 1px solid #BE8900;
+}
+
+#headshotSmall{
+    width: 100%;
+    display: inline;
+    border: 1px solid #BE8900;
+}
+
+#loadingGIF{
+    display: block;
+    margin: 50px auto;
+}
+
+/* TEXT */
+
+.quote{
+    font-family: "Lucida Sans Unicode";
+    font-size: 12px;
+    text-align: center;
+}
+
+.biography.small{
+    font-family: "Lucida Sans Unicode";
+    font-size: 16px;
+}
+
+.biography.small h2{
+    font-size: 22px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.biography.large{
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
+    text-align: justify;
+}
+.biography.large h2{
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.albumTitle{
+    font-family: "Titillium";
+    color: white;
+    font-size: 32px;
+    padding: 10px;
+}
+
+.tracks{
+    color: white;
+    font-family: "Lucida Sans Unicode";
+}
+
+
+
+/* MISC */
+
+#playerLargeScreen{
+    border: 1px solid #BE8900;
+    border-radius: 5px;
+}
+
+#playerSmallScreen{
+    display: none;
+}
+
+#infoTable{
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#infoTable a{
+    text-decoration: none;
+    color: #FEE088;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background: none;
+    background-image: linear-gradient(to right, rgba(0,0,0,0), #BE8900, rgba(0,0,0,0));
+    margin-bottom: 30px;
+}
+
+
+/* FUNCTIONAL */
+
+
+#showHidePhoto{
+    display: none;
+}
+
+.readMoreBio{
+    display: none;
+}
+
+.readMoreLink{
+    text-decoration: none;
+    color: #FEE088;
+}
+
+
+
+/* STYLING */
+
+.column h1{
+    font-family: Titillium;
+    font-size: 3em;
+    font-weight: 100;
+    margin: 0;
+}
+
+.column h2{
+    font-family: Titillium;
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: -10px;
+}
+
+.column.second h1{
+    text-align: right;
+}
+
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+/* WHEN SCREEN IS SMALLER/MEDIUM */
+
+@media screen and (max-width:959px){
+
+    body{
+        background-image: url("../images/bg1.png");
+        background-size: cover;
+    }
+
+    header{
+        background: none;
+        border-bottom: none;
+    }
+
+    #container{
+        width: 100%;
+    }
+
+    #headshot{
+        display: inline;
+    }
+
+    #playerSmallScreen{
+        display: none;
+    }
+
+    .column{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .column.first{
+        width: 70%;
+    }
+
+    .column.second{
+        display: none;
+    }
+
+    .smallScreenSecondColumn{
+        display: block;
+    }
+
+    .column.third{
+        width: 30%;
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* ---------------------------------------------------- */
+
+
+/* WHEN SCREEN IS SMALLEST */
+
+@media screen and (max-width:550px){
+
+    #wrapper{
+        display: block;
+        background-color: rgba(0,0,0,.75);
+    }
+
+    #container{
+        width: 100%;
+    }
+
+    #showHidePhoto{
+        display: inline;
+        text-decoration: none;
+        font-family: Titillium;
+        color: #FEE088;
+        font-size: 18px;
+    }
+
+    #headshot{
+        display: none;
+    }
+
+    #playerSmallScreen{
+        display: none;
+    }
+
+    #playerLargeScreen{
+        display: none;
+    }
+
+    .quote{
+        font-size: 18px;
+    }
+
+    .column{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .column.first{
+        width: 100%;
+    }
+
+    .column.second{
+        display: none;
+    }
+
+    .column.third{
+        width: 100%;
+    }
+
+    .smallScreenThirdColumn{
+        display: block;
+    }
+
+}
