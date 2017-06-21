@@ -1,4 +1,6 @@
 # Phuture Noize fanpage
+June 2017
+<br>
 First attempt at responsive webdesign. 
 <br>
 Perry Janssen
