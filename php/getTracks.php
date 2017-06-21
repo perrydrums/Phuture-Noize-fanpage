@@ -1,8 +1,7 @@
 <?php
 
 //First get credentials
-$client_id = "f90bba51828e493d8e43f63043459ed9";
-$client_secret = "86bcc46ffa7043a397f69c2a3a4db930";
+include("cred.php");
 
 //Credentials must be send like this!
 $credentials = $client_id . ":" . $client_secret;
